@@ -1,0 +1,11 @@
+{
+  "name": "ls-map",
+  "version": "0.0.1",
+  "description": "Display map for foreign university that has labour safety study programm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victor Gusakov",
+  "license": "ISC"
+}
