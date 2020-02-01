@@ -31,7 +31,3 @@ class LSMap extends Component {
     );
   }
 }
-
-export default GoogleApiWrapper({
-  apiKey: "AIzaSyCf2BamPOzpw2ESc6xLzlP4piUaELakNoY"
-})(LSMap)
