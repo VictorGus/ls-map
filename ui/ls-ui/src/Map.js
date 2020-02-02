@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {VectorMap} from 'react-jvectormap'
+import {Col, Row} from 'reactstrap'
+import Items from './List.js'
 
 const testArray = [{name: "House", coords: [59.937332, 30.408868 ]}]
 
@@ -13,19 +15,26 @@ function getData () {
 let dataSet = getData();
 
 class LSMap extends Component {
- render() {
+  render() {
     return (
-      <div style={{width: 1500, height: 500}}>
-        <VectorMap map={'world_mill'}
-                   backgroundColor="#3b96ce"
-                   markers= {[dataSet]}
-                   ref="map"
-                   containerStyle={{
-                     width: '100%',
-                     height: '100%'
-                   }}
-                   containerClassName="map"
-        />
+      <div style={{height: 800}}>
+        <Row>
+          <Col xs='8' style={{'padding-right': 0}}>
+            <VectorMap map={'world_mill'}
+                       backgroundColor="#3b96ce"
+                       markers= {[{name: dataSet.name, latLng: dataSet.coords}]}
+                       ref="map"
+                       containerStyle={{
+                         width: '100%',
+                         height: '100%'
+                       }}
+                       containerClassName="map"
+            />
+          </Col>
+          <Col xs='4'>
+            <Items/>
+          </Col>
+        </Row>
       </div>
     );
   }
