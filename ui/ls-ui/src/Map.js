@@ -4,19 +4,21 @@ import {VectorMap} from 'react-jvectormap'
 const testArray = [{name: "House", coords: [59.937332, 30.408868 ]}]
 
 function getData () {
-  return fetch("http://localhost:8899/load-data", {method: 'GET'})
+  let xhr = new XMLHttpRequest()
+  xhr.open('GET', "http://localhost:8899/load-data", false);
+  xhr.send();
+  return JSON.parse(xhr.responseText)
 }
 
+let dataSet = getData();
+
 class LSMap extends Component {
-  componentDidMount() {
-    getData().then(response => response.json());
-  }
-  render() {
+ render() {
     return (
       <div style={{width: 1500, height: 500}}>
         <VectorMap map={'world_mill'}
                    backgroundColor="#3b96ce"
-                   markers= {[{name: "House", latLng: [59.937332, 30.408868]}]}
+                   markers= {[dataSet]}
                    ref="map"
                    containerStyle={{
                      width: '100%',
