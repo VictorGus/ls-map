@@ -3,7 +3,14 @@ import {VectorMap} from 'react-jvectormap'
 
 const testArray = [{name: "House", coords: [59.937332, 30.408868 ]}]
 
+function getData () {
+  return fetch("http://localhost:8899/load-data", {method: 'GET'})
+}
+
 class LSMap extends Component {
+  componentDidMount() {
+    getData().then(response => response.json());
+  }
   render() {
     return (
       <div style={{width: 1500, height: 500}}>
