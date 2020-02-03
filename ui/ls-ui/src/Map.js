@@ -17,7 +17,6 @@ let dataSet = getData();
 class LSMap extends Component {
   render() {
     return (
-      <div style={{height: 800}}>
         <Row>
           <Col xs='8' style={{'padding-right': 0}}>
             <VectorMap map={'world_mill'}
@@ -26,16 +25,17 @@ class LSMap extends Component {
                        ref="map"
                        containerStyle={{
                          width: '100%',
-                         height: '100%'
+                         height: '100vh'
                        }}
                        containerClassName="map"
             />
           </Col>
           <Col xs='4'>
             <Items/>
+            <Items/>
+            <Items/>
           </Col>
         </Row>
-      </div>
     );
   }
 }
