@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {VectorMap} from 'react-jvectormap'
-import {Col, Row} from 'reactstrap'
-import Items from './List.js'
+import {Col, Row, OverlayTrigger} from 'reactstrap'
+import Item from './List.js'
 
 const testArray = [{name: "House", coords: [59.937332, 30.408868 ]}]
 
@@ -31,9 +31,9 @@ class LSMap extends Component {
             />
           </Col>
           <Col xs='4'>
-            <Items/>
-            <Items/>
-            <Items/>
+            <Item/>
+            <Item/>
+            <Item/>
           </Col>
         </Row>
     );
