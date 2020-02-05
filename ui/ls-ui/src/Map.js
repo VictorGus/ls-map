@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import {VectorMap} from 'react-jvectormap'
 import {Col, Row, OverlayTrigger} from 'reactstrap'
-import Item from './List.js'
-
-const testArray = [{name: "House", coords: [59.937332, 30.408868 ]}]
+import List from './List.js'
 
 function getData () {
   let xhr = new XMLHttpRequest()
@@ -12,16 +10,19 @@ function getData () {
   return JSON.parse(xhr.responseText)
 }
 
-let dataSet = getData();
-
 class LSMap extends Component {
+
   render() {
+    let dataSet = getData();
+
     return (
         <Row>
           <Col xs='8' style={{'padding-right': 0}}>
             <VectorMap map={'world_mill'}
                        backgroundColor="#3b96ce"
-                       markers= {[{name: dataSet.name, latLng: dataSet.coords}]}
+                       markers= {dataSet.map(el => {
+                         return {name: el.name, latLng: el.coords}
+                       })}
                        ref="map"
                        containerStyle={{
                          width: '100%',
@@ -30,11 +31,7 @@ class LSMap extends Component {
                        containerClassName="map"
             />
           </Col>
-          <Col xs='4'>
-            <Item/>
-            <Item/>
-            <Item/>
-          </Col>
+          <List data={dataSet}/>
         </Row>
     );
   }

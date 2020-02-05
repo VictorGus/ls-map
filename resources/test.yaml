@@ -1,6 +1,17 @@
-name: Test 
-description: The quick brown fox jumped over the lazy dog 
-url: http://govna.piroga 
-coords:
-  - 62.137429
-  - -7.016871
+- name: SuperUniversity 
+  description: The quick brown fox jumped over the lazy dog 
+  url: http://govna.piroga 
+  country: Norway 
+  city: City 
+  coords:
+    - 62.137429
+    - -7.016871
+
+- name: SuperChina 
+  description: The quick brown fox jumped over the lazy dog 
+  url: http://govna.piroga 
+  country: China 
+  city: Wuhan
+  coords:
+    - 30.363396
+    - 114.331093

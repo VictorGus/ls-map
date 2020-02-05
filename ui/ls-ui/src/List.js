@@ -1,17 +1,33 @@
 import React, {Component} from 'react';
+import Item from './Item.js'
 import {Card, Button, CardTitle, CardText, Row, Col, CardLink} from 'reactstrap';
+import SearchInput, {createFilter} from 'react-search-input'
 
+/* const FILTER_KEYS =  */
 
-class Items extends Component {
+function formList (items) {
+  return items.map(el => <Item url={el.url} name={el.name} country={el.country} city={el.city} description={el.description}/>
+  )
+}
+
+class List extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      searchTerm: ''
+    }
+    /* this.searchUpdated = this.searchUpdated.bind(this) */
+  }
+
   render() {
     return(
-      <Card body>
-        <CardTitle>First title</CardTitle>
-        <CardText>Test testoviy testa</CardText>
-        <CardLink href="#">Card Link</CardLink>
-      </Card>
+      <Col xs='4'>
+        <SearchInput style={{margin: "0 0 10px 0", width: "100%"}}/>
+        {formList(this.props.data)}
+      </Col>
     );
   }
 }
 
-export default Items;
+export default List;
+
