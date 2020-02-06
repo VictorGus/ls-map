@@ -4,7 +4,7 @@
   "description": "Display map for foreign university that has labour safety study programm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cd ./src/ && node server.js"
   },
   "author": "Victor Gusakov",
   "license": "ISC",

@@ -4,7 +4,13 @@ import App from './App';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
+function Root(props) {
+  return(
+      <App/>
+  );
+}
+
 ReactDOM.render(
-  <App />,
+  <Root />,
   document.getElementById('root')
 );
