@@ -20,6 +20,7 @@ class LSMap extends Component {
           <Col xs='8' style={{'padding-right': 0}}>
             <VectorMap map={'world_mill'}
                        backgroundColor="#3b96ce"
+                       onRegionClick={(e, code) => this.setState({map: code.toLowerCase()+"_mill"})}
                        markers= {dataSet.map(el => {
                          return {name: el.name, latLng: el.coords}
                        })}

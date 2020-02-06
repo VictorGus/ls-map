@@ -15,3 +15,13 @@
   coords:
     - 30.363396
     - 114.331093
+
+- name: SuperGermany 
+  description: The quick brown fox jumped over the lazy dog 
+  url: http://govna.piroga 
+  country: Germany 
+  city: Berlin 
+  coords: 
+    - 52.468046
+    - 13.266632
+
