@@ -24,6 +24,10 @@ class List extends Component {
       <Col xs='4'>
         <SearchInput style={{margin: "0 0 10px 0", width: "100%"}}/>
         {formList(this.props.data)}
+        <Button variant="primary" onclick={(e) => {
+          document.cookie = "whatToRender=world_mill"
+          window.location.reload(false);
+        }}>World Map</Button>
       </Col>
     );
   }
