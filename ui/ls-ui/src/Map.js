@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Alarm from './Alarm.js'
 import {VectorMap} from 'react-jvectormap'
 import {Col, Row, OverlayTrigger} from 'reactstrap'
 import List from './List.js'
@@ -13,39 +14,66 @@ function getData () {
   return JSON.parse(xhr.responseText)
 }
 
-function LSMap(props) {
-  let cookieValue = getCookie("whatToRender");
-  let dataSet = getData();
+class LSMap extends Component {
+  constructor(props) {
+    super(props)
+    this.cookieValue = getCookie("whatToRender");
+    this.dataSet = getData();
+    this.state = {
+      isAlert: null
+    };
+    this.baseState = this.state;
+    this.handleClick = this.handleClick.bind(this);
 
-  if (!SUPPORTED_MAPS.includes(cookieValue)){
-    document.cookie = "whatToRender=world_mill"
+    if (!SUPPORTED_MAPS.includes(this.cookieValue)){
+      document.cookie = "whatToRender=world_mill"
+    }
   }
 
-  return (
-    <Row>
-      <Col xs='8' style={{'padding-right': 0}}>
-        <VectorMap map={getCookie("whatToRender")}
-                   backgroundColor="#3b96ce"
-                   onRegionClick={(e, code) => {
-                     if (!SUPPORTED_MAPS.includes(code.toLowerCase() + "_mill")){
-                     } else {
-                       document.cookie = `whatToRender=${code.toLowerCase() + "_mill"}`
-                       window.location.reload(false);
-                     }
-                   }}
-                   markers= {dataSet.map(el => {
-                     return {name: el.name, latLng: el.coords}
-                   })}
-                   containerStyle={{
-                     width: '100%',
-                     height: '100vh'
-                   }}
-                   containerClassName="map"
-        />
-      </Col>
-      <List data={dataSet}/>
-    </Row>
-  );
+  handleClick (e, code) {
+    if (!SUPPORTED_MAPS.includes(code.toLowerCase() + "_mill")) {
+      this.setState(state => ({isAlert: !state.isAlert}))
+    } else {
+      document.cookie = `whatToRender=${code.toLowerCase() + "_mill"}`
+      window.location.reload(false);
+    }
+  }
+
+  renderAlarm(state) {
+    if (state.isAlert) {
+      return (<Alarm/>);
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        <Row>
+          <Col xs='8' style={{'padding-right': 0}}>
+            <VectorMap map={this.cookieValue}
+                       backgroundColor="#3b96ce"
+                       onRegionTipShow={(e, el, code) => {
+                         if (!SUPPORTED_MAPS.includes(code.toLowerCase() + "_mill")) {
+                           e.preventDefault();
+                         }
+                       }}
+                       onRegionClick={this.handleClick}
+                       markers= {this.dataSet.map(el => {
+                         return {name: el.name, latLng: el.coords}
+                       })}
+                       containerStyle={{
+                         width: '100%',
+                         height: '100vh'
+                       }}
+                       containerClassName="map"
+            />
+          </Col>
+          <List data={this.dataSet}/>
+        </Row>
+        {this.state.isAlert ? <Alarm/> : null}
+      </div>
+    );
+  }
 }
 
 export default LSMap;

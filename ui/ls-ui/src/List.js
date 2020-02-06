@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Item from './Item.js'
+import Item from './Item.js';
 import {Card, Button, CardTitle, CardText, Row, Col, CardLink} from 'reactstrap';
 import getCookie from './utils.js'
 import SearchInput, {createFilter} from 'react-search-input'
