@@ -4,4 +4,18 @@ function getCookie(name) {
   if (parts.length == 2) return parts.pop().split(";").shift();
 }
 
-export default getCookie;
+
+function normalize(name) {
+  let n = name.toLowerCase();
+  switch(n) {
+  case "us":
+    return "us_aea";
+  case "ca":
+    return "ca_lcc";
+  default:
+    return n + "_mill"
+  }
+
+}
+
+export {getCookie, normalize};

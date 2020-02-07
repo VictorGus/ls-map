@@ -3,7 +3,7 @@ import Alarm from './Alarm.js'
 import {VectorMap} from 'react-jvectormap'
 import {Col, Row, OverlayTrigger} from 'reactstrap'
 import List from './List.js'
-import getCookie from './utils.js'
+import {getCookie, normalize} from './utils.js'
 
 const SUPPORTED_MAPS = ["oceania_mill", "ar_mill", "brazil", "co_mill", "europe_mill", "ch_mill", "world_mill", "indonesia", "north_america_mill", "se_mill", "th_mill", "fr_mill", "ca_lcc", "south_america_mill", "continents_mill", "asia_mill", "es_mill", "kr_mill", "vietnam", "us_aea", "africa_mill", "de_mill"]
 
@@ -31,10 +31,10 @@ class LSMap extends Component {
   }
 
   handleClick (e, code) {
-    if (!SUPPORTED_MAPS.includes(code.toLowerCase() + "_mill")) {
+    if (!SUPPORTED_MAPS.includes(normalize(code))) {
       this.setState(state => ({isAlert: !state.isAlert}))
     } else {
-      document.cookie = `whatToRender=${code.toLowerCase() + "_mill"}`
+      document.cookie = `whatToRender=${normalize(code)}`
       window.location.reload(false);
     }
   }
@@ -53,13 +53,13 @@ class LSMap extends Component {
             <VectorMap map={this.cookieValue}
                        backgroundColor="#3b96ce"
                        onRegionTipShow={(e, el, code) => {
-                         if (!SUPPORTED_MAPS.includes(code.toLowerCase() + "_mill")) {
+                         if (!SUPPORTED_MAPS.includes(normalize(code))) {
                            e.preventDefault();
                          }
                        }}
                        onRegionClick={this.handleClick}
                        markers= {this.dataSet.map(el => {
-                         return {name: el.name, latLng: el.coords}
+                         return {name: el.name, latLng: el.coords, country: el.country, city: el.city}
                        })}
                        containerStyle={{
                          width: '100%',
