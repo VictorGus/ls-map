@@ -4,7 +4,7 @@ import {Card, Button, CardTitle, CardText, Row, Col, CardLink} from 'reactstrap'
 import getCookie from './utils.js'
 import SearchInput, {createFilter} from 'react-search-input'
 
-/* const FILTER_KEYS =  */
+const FILTER_KEYS = ['country', 'city', 'name'];
 
 function formList (items) {
   return items.map(el => <Item url={el.url} name={el.name} country={el.country} city={el.city} description={el.description}/>
@@ -14,7 +14,7 @@ function formList (items) {
 function isWorldMap() {
   if (getCookie("whatToRender") != "world_mill") {
     return (
-      <Button variant="primary" onClick={(e) => {
+      <Button style={{"margin-bottom": 10 }} variant="primary" onClick={(e) => {
         document.cookie = "whatToRender=world_mill"
         window.location.reload(false);
       }}>World Map</Button>
@@ -28,17 +28,23 @@ class List extends Component {
     this.state = {
       searchTerm: ''
     }
-    /* this.searchUpdated = this.searchUpdated.bind(this) */
+    this.searchUpdated = this.searchUpdated.bind(this)
   }
 
   render() {
+   const filteredItems = this.props.data.filter(createFilter(this.state.searchTerm, FILTER_KEYS));
+
     return(
       <Col xs='4'>
-        <SearchInput style={{margin: "0 0 10px 0", width: "100%"}}/>
-        {formList(this.props.data)}
         {isWorldMap()}
+        <SearchInput style={{margin: "0 0 10px 0", width: "100%"}} onChange={this.searchUpdated}/>
+        {formList(filteredItems)}
       </Col>
     );
+  }
+
+  searchUpdated (term) {
+    this.setState({searchTerm: term})
   }
 }
 
