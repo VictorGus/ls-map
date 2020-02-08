@@ -5,6 +5,10 @@ function getCookie(name) {
   return matches ? decodeURIComponent(matches[1]) : undefined;
 }
 
+function deleteCookie( name ) {
+  document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+
 function normalize(name) {
   let n = name.toLowerCase();
   switch(n) {
@@ -31,7 +35,6 @@ function getCountryByCode(code) {
   case "FR":
     return "Франция";
   }
-
 }
 
-export {getCookie, normalize, getCountryByCode};
+export {getCookie, deleteCookie, normalize, getCountryByCode};

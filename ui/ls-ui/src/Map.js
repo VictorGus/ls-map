@@ -1,11 +1,31 @@
 import React, {Component} from 'react';
 import Alarm from './Alarm.js'
 import {VectorMap} from 'react-jvectormap'
-import {Col, Row, OverlayTrigger} from 'reactstrap'
-import List from './List.js'
-import {getCookie, normalize, getCountryByCode} from './utils.js'
+import Item from './Item.js';
+import {Col, Button, Row, OverlayTrigger} from 'reactstrap'
+import {getCookie, normalize, getCountryByCode, deleteCookie} from './utils.js'
+import SearchInput, {createFilter} from 'react-search-input'
 
 const SUPPORTED_MAPS = ["oceania_mill", "ar_mill", "brazil", "co_mill", "europe_mill", "ch_mill", "world_mill", "indonesia", "north_america_mill", "se_mill", "th_mill", "fr_mill", "ca_lcc", "south_america_mill", "continents_mill", "asia_mill", "es_mill", "kr_mill", "vietnam", "us_aea", "africa_mill", "de_mill"]
+
+const FILTER_KEYS = ['country', 'city', 'name'];
+
+function formList (items) {
+  return items.map(el => <Item url={el.url} name={el.name} country={el.country} city={el.city} description={el.description}/>
+  )
+}
+
+function isWorldMap() {
+  if (getCookie("whatToRender") != "world_mill") {
+    return (
+      <Button style={{"margin-bottom": 10 }} variant="primary" onClick={(e) => {
+        document.cookie = "whatToRender=world_mill"
+        deleteCookie("filterOption");
+        window.location.reload(false);
+      }}>World Map</Button>
+    );
+  }
+}
 
 function getData () {
   let xhr = new XMLHttpRequest()
@@ -13,6 +33,7 @@ function getData () {
   xhr.send();
   return JSON.parse(xhr.responseText)
 }
+
 
 class LSMap extends Component {
   constructor(props) {
@@ -22,11 +43,15 @@ class LSMap extends Component {
     let filterOption = getCookie("filterOption");
     let filteredDataSet = filterOption ? data.filter(el => el.country == filterOption) : data
     this.state = {
+      searchTerm: '',
       dataSet: filteredDataSet,
       isAlert: null
     };
     this.baseState = this.state;
+
     this.handleClick = this.handleClick.bind(this);
+
+    this.searchUpdated = this.searchUpdated.bind(this)
 
     if (!SUPPORTED_MAPS.includes(this.cookieValue)){
       document.cookie = "whatToRender=world_mill"
@@ -43,13 +68,9 @@ class LSMap extends Component {
     }
   }
 
-  renderAlarm(state) {
-    if (state.isAlert) {
-      return (<Alarm/>);
-    }
-  }
-
   render() {
+    const filteredItems = this.state.dataSet.filter(createFilter(this.state.searchTerm, FILTER_KEYS));
+
     return (
       <div>
         <Row>
@@ -62,7 +83,7 @@ class LSMap extends Component {
                          }
                        }}
                        onRegionClick={this.handleClick}
-                       markers= {this.state.dataSet.map(el => {
+                       markers= {filteredItems.map(el => {
                          return {name: el.name, latLng: el.coords, country: el.country, city: el.city}
                        })}
                        containerStyle={{
@@ -72,12 +93,21 @@ class LSMap extends Component {
                        containerClassName="map"
             />
           </Col>
-          <List data={this.state.dataSet}/>
+          <Col xs='4'>
+            {isWorldMap()}
+            <SearchInput style={{margin: "0 0 10px 0", width: "100%"}} onChange={this.searchUpdated}/>
+            {formList(filteredItems)}
+          </Col>
         </Row>
         {this.state.isAlert ? <Alarm/> : null}
       </div>
     );
   }
+
+  searchUpdated (term) {
+    this.setState({searchTerm: term})
+  }
+
 }
 
 export default LSMap;
