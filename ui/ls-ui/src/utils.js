@@ -1,9 +1,9 @@
 function getCookie(name) {
-  var value = "; " + document.cookie;
-  var parts = value.split("; " + name + "=");
-  if (parts.length == 2) return parts.pop().split(";").shift();
+  let matches = document.cookie.match(new RegExp(
+    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+  ));
+  return matches ? decodeURIComponent(matches[1]) : undefined;
 }
-
 
 function normalize(name) {
   let n = name.toLowerCase();
@@ -13,9 +13,25 @@ function normalize(name) {
   case "ca":
     return "ca_lcc";
   default:
-    return n + "_mill"
+    return n + "_mill";
   }
 
 }
 
-export {getCookie, normalize};
+function getCountryByCode(code) {
+  switch(code) {
+  case "DE":
+    return "Germany";
+  case "US":
+    return "США";
+  case "CA":
+    return "Канада";
+  case "ES":
+    return "Испания";
+  case "FR":
+    return "Франция";
+  }
+
+}
+
+export {getCookie, normalize, getCountryByCode};

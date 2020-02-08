@@ -3,7 +3,7 @@ import Alarm from './Alarm.js'
 import {VectorMap} from 'react-jvectormap'
 import {Col, Row, OverlayTrigger} from 'reactstrap'
 import List from './List.js'
-import {getCookie, normalize} from './utils.js'
+import {getCookie, normalize, getCountryByCode} from './utils.js'
 
 const SUPPORTED_MAPS = ["oceania_mill", "ar_mill", "brazil", "co_mill", "europe_mill", "ch_mill", "world_mill", "indonesia", "north_america_mill", "se_mill", "th_mill", "fr_mill", "ca_lcc", "south_america_mill", "continents_mill", "asia_mill", "es_mill", "kr_mill", "vietnam", "us_aea", "africa_mill", "de_mill"]
 
@@ -18,8 +18,11 @@ class LSMap extends Component {
   constructor(props) {
     super(props)
     this.cookieValue = getCookie("whatToRender");
-    this.dataSet = getData();
+    let data = getData();
+    let filterOption = getCookie("filterOption");
+    let filteredDataSet = filterOption ? data.filter(el => el.country == filterOption) : data
     this.state = {
+      dataSet: filteredDataSet,
       isAlert: null
     };
     this.baseState = this.state;
@@ -35,6 +38,7 @@ class LSMap extends Component {
       this.setState(state => ({isAlert: !state.isAlert}))
     } else {
       document.cookie = `whatToRender=${normalize(code)}`
+      document.cookie = `filterOption=${getCountryByCode(code)}`
       window.location.reload(false);
     }
   }
@@ -58,7 +62,7 @@ class LSMap extends Component {
                          }
                        }}
                        onRegionClick={this.handleClick}
-                       markers= {this.dataSet.map(el => {
+                       markers= {this.state.dataSet.map(el => {
                          return {name: el.name, latLng: el.coords, country: el.country, city: el.city}
                        })}
                        containerStyle={{
@@ -68,7 +72,7 @@ class LSMap extends Component {
                        containerClassName="map"
             />
           </Col>
-          <List data={this.dataSet}/>
+          <List data={this.state.dataSet}/>
         </Row>
         {this.state.isAlert ? <Alarm/> : null}
       </div>
