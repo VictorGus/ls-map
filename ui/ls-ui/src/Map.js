@@ -5,13 +5,17 @@ import Item from './Item.js';
 import {Col, Button, Row, OverlayTrigger} from 'reactstrap'
 import {getCookie, normalize, getCountryByCode, deleteCookie} from './utils.js'
 import SearchInput, {createFilter} from 'react-search-input'
+import ScrollAree from 'react-scrollbar';
+import 'react-perfect-scrollbar/dist/css/styles.css';
+import PerfectScrollbar from 'react-perfect-scrollbar';
+
 
 const SUPPORTED_MAPS = ["oceania_mill", "ar_mill", "brazil", "co_mill", "europe_mill", "ch_mill", "world_mill", "indonesia", "north_america_mill", "se_mill", "th_mill", "fr_mill", "ca_lcc", "south_america_mill", "continents_mill", "asia_mill", "es_mill", "kr_mill", "vietnam", "us_aea", "africa_mill", "de_mill"]
 
 const FILTER_KEYS = ['country', 'city', 'name'];
 
 function formList (items) {
-  return items.map(el => <Item url={el.url} name={el.name} country={el.country} city={el.city} description={el.description}/>
+  return items.map(el => <Item url={el.site} name={el.name} country={el.country} city={el.city} rankingPlace={el.rankingPlace} description={el.description}/>
   )
 }
 
@@ -76,7 +80,7 @@ class LSMap extends Component {
         <Row>
           <Col xs='8' style={{'padding-right': 0}}>
             <VectorMap map={this.cookieValue}
-                       backgroundColor="#3b96ce"
+                       backgroundColor="#8bc4b0"
                        onRegionTipShow={(e, el, code) => {
                          if (!SUPPORTED_MAPS.includes(normalize(code))) {
                            e.preventDefault();
@@ -88,7 +92,7 @@ class LSMap extends Component {
                        })}
                        containerStyle={{
                          width: '100%',
-                         height: '100vh'
+                         height: '110vh'
                        }}
                        containerClassName="map"
             />
@@ -96,7 +100,9 @@ class LSMap extends Component {
           <Col xs='4'>
             {isWorldMap()}
             <SearchInput style={{margin: "0 0 10px 0", width: "100%"}} onChange={this.searchUpdated}/>
+            <PerfectScrollbar>
             {formList(filteredItems)}
+            </PerfectScrollbar>
           </Col>
         </Row>
         {this.state.isAlert ? <Alarm/> : null}
