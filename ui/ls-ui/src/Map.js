@@ -33,7 +33,7 @@ function isWorldMap() {
 
 function getData () {
   let xhr = new XMLHttpRequest()
-  xhr.open('GET', "http://localhost:8899/load-data", false);
+  xhr.open('GET', "load-data", false);
   xhr.send();
   return JSON.parse(xhr.responseText)
 }
@@ -80,7 +80,7 @@ class LSMap extends Component {
         <Row>
           <Col xs='8' style={{'padding-right': 0}}>
             <VectorMap map={this.cookieValue}
-                       backgroundColor="#8bc4b0"
+                       backgroundColor="#4287f5"
                        onRegionTipShow={(e, el, code) => {
                          if (!SUPPORTED_MAPS.includes(normalize(code))) {
                            e.preventDefault();

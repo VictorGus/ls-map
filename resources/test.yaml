@@ -1,27 +1,84 @@
-- name: SuperUniversity 
-  description: The quick brown fox jumped over the lazy dog 
-  url: http://govna.piroga 
-  country: Norway 
-  city: City 
-  coords:
-    - 62.137429
-    - -7.016871
-
-- name: SuperChina 
-  description: The quick brown fox jumped over the lazy dog 
-  url: http://govna.piroga 
-  country: China 
-  city: Wuhan
-  coords:
-    - 30.363396
-    - 114.331093
-
-- name: SuperGermany 
-  description: The quick brown fox jumped over the lazy dog 
-  url: http://govna.piroga 
-  country: Germany 
-  city: Berlin 
-  coords: 
-    - 52.468046
-    - 13.266632
-
+- name: University of Oxford
+  rankingPlace: '1'
+  country: Великобритания
+  city: Оксфорд
+  coords: ['51.7611', '-1.2534']
+  site: www.ox.ac.uk
+  studyProgramms: [Безопасность]
+- name: California Institute of Technology
+  rankingPlace: '2'
+  country: США
+  city: Пасадина
+  coords: ['34.13833', '-118.12528']
+  site: www.caltech.edu
+  studyProgramms: [Экологическая инженерия]
+- name: Stanford University
+  rankingPlace: '4'
+  country: США
+  city: Станфорд
+  coords: ['37.43000', '-122.17000']
+  site: www.stanford.edu
+  studyProgramms: [Экология]
+- name: Massachusetts Institute of Technology
+  rankingPlace: '5'
+  country: США
+  city: Кембридж
+  coords: ['42.35889', '-71.09278']
+  site: web.mit.edu
+  studyProgramms: [Экологическая инженерия]
+- name: Princeton University
+  rankingPlace: '6'
+  country: США
+  city: Принстон
+  coords: ['40.34250', '-74.65583']
+  site: www.princeton.edu
+  studyProgramms: [Экология]
+- name: Harvard University
+  rankingPlace: '7'
+  country: США
+  city: Кембридж
+  coords: ['42.37611', '-71.11639']
+  site: harvard.edu
+  studyProgramms: [Экология]
+- name: Yale University
+  rankingPlace: '8'
+  country: США
+  city: Нью-Хейвен
+  coords: ['41.31056', '-72.96028']
+  site: www.yale.edu
+  studyProgramms: [Экология]
+- name: University of Chicago
+  rankingPlace: '9'
+  country: США
+  city: Чикаго
+  coords: ['41.789722', '-87.599722']
+  site: www.uchicago.edu
+  studyProgramms: [Экология]
+- name: Imperial College London
+  rankingPlace: '10'
+  country: Великобритания
+  city: Лондон
+  coords: ['51.498308', '-0.176882']
+  site: www.imperial.ac.uk
+  studyProgramms: [Экологическая инженерия]
+- name: University of Pennsylvania
+  rankingPlace: '11'
+  country: США
+  city: Филадельфия
+  coords: ['39.95361', '-75.19278']
+  site: www.upenn.edu
+  studyProgramms: [Экология]
+- name: Johns Hopkins University
+  rankingPlace: '12'
+  country: США
+  city: Балтимор
+  coords: ['39.29778', '-76.59056']
+  site: www.jhu.edu
+  studyProgramms: [Экология]
+- name: University of California, Berkeley
+  rankingPlace: '13'
+  country: США
+  city: Беркли
+  coords: ['37.87000', '-122.25889']
+  site: www.berkeley.edu
+  studyProgramms: [Экология]
