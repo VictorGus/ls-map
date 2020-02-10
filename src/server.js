@@ -14,7 +14,7 @@ app.use(function(req, res, next ){
   next();
 })
 
-app.get('*', (req, res) => {res.sendFile(path.join(__dirname + '/public/index.html').replace("src", "ui"));});
+app.get('*', (req, res) => {res.sendFile(path.join(__dirname + '/build/index.html').replace("src", "ui"));});
 
 app.listen(process.env.PORT || 8899, (err, res) => {
   if(err) {
