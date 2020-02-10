@@ -7,7 +7,7 @@
     "client-install": "npm install --prefix ui",
     "client": "npm start --prefix ui",
     "start": "cd ./src/ && node server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix ui && npm run build --prefix ui"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix ui && npm run build --prefix ui && npm run client"
   },
   "author": "Victor Gusakov",
   "license": "ISC",
