@@ -4,6 +4,8 @@
   "description": "Display map for foreign university that has labour safety study programm",
   "main": "index.js",
   "scripts": {
+    "client-install": "npm install --prefix ui",
+    "client": "npm start --prefix ui",
     "start": "cd ./src/ && node server.js"
   },
   "author": "Victor Gusakov",

@@ -1,5 +1,5 @@
 {
-  "name": "ls-ui",
+  "name": "ui",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,11 +15,11 @@
   },
   "devDependencies": {},
   "scripts": {
-    "heroku-postbuild": "cd client && npm install && npm run build",
+    "heroku-postbuild": "cd ui && npm install && npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:8899" 
+  "proxy": "http://localhost:8899"
 }
