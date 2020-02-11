@@ -4,9 +4,16 @@ const fs = require('fs');
 const app = express();
 const path = require('path');
 
-const Universities = YAML.parse(fs.readFileSync('./resources/test.yaml', 'utf-8'));
+var Universities = YAML.parse(fs.readFileSync('./resources/test.yaml', 'utf-8'));
 
 app.use(express.static(path.join(__dirname, '/ui/build')));
+
+function watchCallback(curr, prev) {
+  Universities = YAML.parse(fs.readFileSync('./resources/test.yaml', 'utf-8'));
+  console.log(Universities);
+}
+
+fs.watch('./resources/test.yaml', watchCallback);
 
 app.use(function(req, res, next ){
   res.header("Access-Control-Allow-Origin", "http://localhost:3000"); 

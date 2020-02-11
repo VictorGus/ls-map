@@ -28,10 +28,13 @@ function formList (items) {
 function isWorldMap() {
   if (getCookie("whatToRender") != "world_mill") {
     return (
-      <Button style={{"margin-bottom": 10 }} variant="primary" onClick={(e) => {
-        document.cookie = "whatToRender=world_mill"
-        deleteCookie("filterOption");
-        window.location.reload(false);
+      <Button style={{"margin-bottom": 10,
+                      "position":"absolute",
+                      "top": 0, "left": -105}}
+              variant="primary" onClick={(e) => {
+                document.cookie = "whatToRender=world_mill"
+                deleteCookie("filterOption");
+                window.location.reload(false);
       }}>World Map</Button>
     );
   }

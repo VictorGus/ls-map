@@ -6,6 +6,13 @@ const path = require('path');
 
 const Universities = YAML.parse(fs.readFileSync('../resources/test.yaml', 'utf-8'));
 
+function watchCallback(curr, prev) {
+  console.log(curr);
+
+}
+
+fs.watchFile('../resources/test.yaml', watchCallback);
+
 app.use(express.static(path.join(__dirname, '/ui/build')));
 
 app.use(function(req, res, next ){
