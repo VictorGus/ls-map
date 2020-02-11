@@ -82,3 +82,311 @@
   coords: ['37.87000', '-122.25889']
   site: www.berkeley.edu
   studyProgramms: [Экология]
+- name: UCL (University College London)
+  rankingPlace: '15'
+  country: Великобритания
+  city: Лондон
+  coords: ['51.5247889', '-0.1335778']
+  site: ucl.ac.uk
+  studyProgramms: [Экологическая инженерия]
+- name: Columbia University
+  rankingPlace: '16'
+  country: США
+  city: Нью-Йорк
+  coords: ['40.80861', '-73.96222']
+  site: www.columbia.edu
+  studyProgramms: [Экология]
+- name: University of California, Los Angeles
+  rankingPlace: '17'
+  country: США
+  city: Лос-Анджелес
+  coords: ['34.07222', '-118.44389']
+  site: www.ucla.edu
+  studyProgramms: [Экология]
+- name: Cornell University
+  rankingPlace: '19'
+  country: США
+  city: Итака
+  coords: ['42.44889', '-76.47861']
+  site: www.cornell.edu
+  studyProgramms: [Экология]
+- name: Duke University
+  rankingPlace: '20'
+  country: США
+  city: Дарем
+  coords: ['36.00111', '-78.93889']
+  site: www.duke.edu
+  studyProgramms: [Экология]
+- name: 'University of Michigan - Ann Arbor '
+  rankingPlace: '21'
+  country: 'США '
+  city: Энн-Арбор
+  coords: ['42.28278', '-83.73500']
+  site: www.umich.edu
+  studyProgramms: [Экология]
+- name: Northwestern University
+  rankingPlace: '22'
+  country: США
+  city: Эванстон
+  coords: [northwestern.edu]
+  site: 42.0548,-87.6739
+  studyProgramms: [Экология, ' Экологическая инженерия']
+- name: Tsinghua University
+  rankingPlace: '23'
+  country: Китай
+  city: Пекин
+  coords: ['40.00056', '116.32611']
+  site: tsinghua.edu.cn
+  studyProgramms: [Экологическая инженерия]
+- name: National University of Singapore (NUS)
+  rankingPlace: '25'
+  country: Сингапур
+  city: Сингапур
+  coords: ['1.29556', '103.77667']
+  site: www.nus.edu.sg
+  studyProgramms: [Экология]
+- name: University of Washington
+  rankingPlace: '26'
+  country: США
+  city: Сиэтл
+  coords: ['47.65639', '-122.31306']
+  site: www.washington.edu
+  studyProgramms: [Экологическая инженерия]
+- name: Carnegie Mellon University
+  rankingPlace: '27'
+  country: США
+  city: Питтсбург
+  coords: ['40.44306', '-79.94333']
+  site: www.cmu.edu
+  studyProgramms: [Экологическая инженерия]
+- name: New York University
+  rankingPlace: '29'
+  country: США
+  city: Нью-Йорк
+  coords: ['40.73000', '-73.99500']
+  site: www.nyu.edu
+  studyProgramms: [Экологическая инженерия]
+- name: University of Edinburgh
+  rankingPlace: '30'
+  country: Великобритания
+  city: Эдинбург
+  coords: ['55.9473889', '-3.1871944']
+  site: ed.ac.uk
+  studyProgramms: [Пожарная безопасность]
+- name: Ludwig Maximilian University of Munich
+  rankingPlace: '32'
+  country: Германия
+  city: Мюнхен
+  coords: ['48.15083', '11.58028']
+  site: uni-muenchen.de
+  studyProgramms: [Экологическая инженерия]
+- name: The University of British Columbia
+  rankingPlace: '34'
+  country: Канада
+  city: Ванкувер
+  coords: ['49.2669222', '-123.2474667']
+  site: ubc.ca
+  studyProgramms: [Экологическая инженерия]
+- name: The University of Hong Kong
+  rankingPlace: '35'
+  country: Гонконг
+  city: Гонконг
+  coords: ['22.28417', '114.13778']
+  site: hku.hk
+  studyProgramms: [Экологическая инженерия]
+- name: University of Texas at Austin
+  rankingPlace: '38'
+  country: США
+  city: Остин
+  coords: ['30.28614', '-97.73942']
+  site: utexas.edu
+  studyProgramms: [Экология]
+- name: Georgia Institute of Technology
+  rankingPlace: '38'
+  country: США
+  city: Атланта
+  coords: ['33.77583', '-84.39472']
+  site: gatech.edu
+  studyProgramms: [Охрана труда]
+- name: McGill University
+  rankingPlace: '42'
+  country: Канада
+  city: Монреаль
+  coords: ['45.50306', '-73.61500']
+  site: mcgill.ca
+  studyProgramms: [Экологическая инженерия]
+- name: Technical University of Munich
+  rankingPlace: '43'
+  country: Германия
+  city: Мюнхен
+  coords: ['48.14806', '11.56806']
+  site: www.tum.de
+  studyProgramms: [Экологическая инженерия]
+- name: Hong Kong University of Science and Technology
+  rankingPlace: '47'
+  country: Гонконг
+  city: Гонконг
+  coords: ['22.55139', '114.43417']
+  site: ust.hk
+  studyProgramms: [Экологическая инженерия]
+- name: University of Illinois At Urbana Champaign
+  rankingPlace: '48'
+  country: США
+  city: Эрбана, Шампейн
+  coords: ['40.11056', '-88.22833']
+  site: www.illinois.edu
+  studyProgramms: [Экология]
+- name: University of Wisconsin - Madison
+  rankingPlace: '51'
+  country: США
+  city: Мадисон
+  coords: ['43.07500', '-89.41722']
+  site: www.wisc.edu
+  studyProgramms: [Экология]
+- name: Washington University in St Louis
+  rankingPlace: '52'
+  country: США
+  city: Сент-Луис
+  coords: ['38.64639', '-90.30639']
+  site: www.wustl.edu
+  studyProgramms: [Экология]
+- name: University of North Carolina At Chapel Hill
+  rankingPlace: '54'
+  country: США
+  city: Чапел-Хилл
+  coords: ['35.90833', '-79.05000']
+  site: www.unc.edu
+  studyProgramms: [Экология]
+- name: University of California Davis
+  rankingPlace: '57'
+  country: США
+  city: Дейвис
+  coords: ['38.54000', '-121.75000']
+  site: www.ucdavis.edu
+  studyProgramms: [Экология]
+- name: University of Manchester
+  rankingPlace: '55'
+  country: Великобритания
+  city: Манчестер
+  coords: ['53.46556', '-2.23361']
+  site: manchester.ac.uk
+  studyProgramms: [Экологическая инженерия]
+- name: University of California, Santa Barbara
+  rankingPlace: '57'
+  country: США
+  city: Санта-Барбара
+  coords: ['34.41254', '-119.84813']
+  site: www.ucsb.edu
+  studyProgramms: [Экология]
+- name: The University of Sydney
+  rankingPlace: '60'
+  country: Австралия
+  city: Сидней
+  coords: ['-33.8858', '151.189937']
+  site: usyd.edu.au
+  studyProgramms: [Экологическая инженерия]
+- name: Boston University
+  rankingPlace: '61'
+  country: США
+  city: Бостон
+  coords: ['42.34972', '-71.09972']
+  site: bu.edu
+  studyProgramms: [Экология]
+- name: University of Southern California
+  rankingPlace: '62'
+  country: США
+  city: Лос-Анджелес
+  coords: ['34.02056', '-118.28556']
+  site: www.usc.edu
+  studyProgramms: [Экология]
+- name: The University of Queensland
+  rankingPlace: '66'
+  country: Австралия
+  city: Брисбен
+  coords: ['-27.49833', '153.01528']
+  site: uq.edu.au
+  studyProgramms: [Охрана труда, ' Пожарная безопасность', ' Гигиена труда']
+- name: The Ohio State University
+  rankingPlace: '70'
+  country: США
+  city: Коламбус
+  coords: ['40.00000', '-83.01444']
+  site: www.osu.edu
+  studyProgramms: [Экология]
+- name: University of New South Wales - UNSW
+  rankingPlace: '71'
+  country: Австралия
+  city: Сидней
+  coords: ['-33.91778', '151.23111']
+  site: www.unsw.edu.au
+  studyProgramms: [Экологическая инженерия]
+- name: Pennsylvania State University Park Campus
+  rankingPlace: '78'
+  country: США
+  city: Юниверсити-Парк
+  coords: ['40.79583', '-77.86250']
+  site: www.psu.edu
+  studyProgramms: ['Экология ', ' Охрана труда']
+- name: University of Minnesota, Twin Cities Campus
+  rankingPlace: '79'
+  country: США
+  city: Миннеаполис, Сент-Пол
+  coords: ['44.97528', '-93.23417']
+  site: umn.edu
+  studyProgramms: [Экология]
+- name: Emory University
+  rankingPlace: '80'
+  country: США
+  city: Атланта
+  coords: ['33.79111', '-84.32333']
+  site: www.emory.edu
+  studyProgramms: [Экология]
+- name: Michigan State University
+  rankingPlace: '84'
+  country: США
+  city: Ист-Лансинг
+  coords: ['42.723387', '-84.481366']
+  site: www.msu.edu
+  studyProgramms: [Экология]
+- name: Purdue University
+  rankingPlace: '88'
+  country: США
+  city: Уэст-Лафейетт
+  coords: ['40.424', '-86.929']
+  site: www.purdue.edu
+  studyProgramms: [Экология, ' Гигиена труда']
+- name: University of Maryland
+  rankingPlace: '91'
+  country: США
+  city: Колледж-Парк
+  coords: ['38.98750', '-76.94000']
+  site: www.umd.edu
+  studyProgramms: [Экология]
+- name: Dartmouth College
+  rankingPlace: '94'
+  country: США
+  city: Хановер
+  coords: ['43.70361', '-72.28972']
+  site: www.dartmouth.edu
+  studyProgramms: [Экология]
+- name: University of California Irvine
+  rankingPlace: '96'
+  country: США
+  city: Ирвайн
+  coords: ['33.64528', '-117.84250']
+  site: www.uci.edu
+  studyProgramms: [Экология]
+- name: Georgetown University
+  rankingPlace: '102'
+  country: США
+  city: Вашингтон
+  coords: ['38.90722', '-77.07278']
+  site: georgetown.edu
+  studyProgramms: [Экология]
+- name: University of Arizona
+  rankingPlace: '104'
+  country: США
+  city: Тусон
+  coords: ['32.23167', '-110.95194']
+  site: www.arizona.edu
+  studyProgramms: [Экология, ' Охрана труда']

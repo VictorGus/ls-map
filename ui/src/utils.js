@@ -25,7 +25,7 @@ function normalize(name) {
 function getCountryByCode(code) {
   switch(code) {
   case "DE":
-    return "Germany";
+    return "Германия";
   case "US":
     return "США";
   case "CA":

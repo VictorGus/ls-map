@@ -101,12 +101,12 @@ class LSMap extends Component {
                        })}
                        containerStyle={{
                          width: '100%',
-                         height: '110vh'
+                         height: '103vh'
                        }}
                        containerClassName="map"
             />
           </Col>
-          <Col xs='4'>
+          <Col xs='4' style={{"padding-left": 3, height: '103vh'}}>
             {isWorldMap()}
             <SearchInput style={{margin: "0 0 10px 0", width: "100%"}} onChange={this.searchUpdated}/>
             <PerfectScrollbar>

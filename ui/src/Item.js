@@ -12,7 +12,7 @@ function Item(props) {
         <Rank rankingPlace={props.rankingPlace}>
         </Rank>
         Страна: <Label text={props.country}/>  Город: <Label text={props.city}/>
-         <List listHeader="Программы" studyProgramms={props.studyProgramms}/>
+         <List listHeader="Программы:" studyProgramms={props.studyProgramms}/>
         <CardLink href={'http://' + props.url}>Visit site</CardLink>
       </CardBody>
     </Card>
