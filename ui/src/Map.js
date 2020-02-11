@@ -12,10 +12,16 @@ import PerfectScrollbar from 'react-perfect-scrollbar';
 
 const SUPPORTED_MAPS = ["oceania_mill", "ar_mill", "brazil", "co_mill", "europe_mill", "ch_mill", "world_mill", "indonesia", "north_america_mill", "se_mill", "th_mill", "fr_mill", "ca_lcc", "south_america_mill", "continents_mill", "asia_mill", "es_mill", "kr_mill", "vietnam", "us_aea", "africa_mill", "de_mill"]
 
-const FILTER_KEYS = ['country', 'city', 'name'];
+const FILTER_KEYS = ['country', 'city', 'name', 'studyProgramms'];
 
 function formList (items) {
-  return items.map(el => <Item url={el.site} name={el.name} country={el.country} city={el.city} rankingPlace={el.rankingPlace} description={el.description}/>
+  return items.map(el => <Item url={el.site}
+                               name={el.name}
+                               country={el.country}
+                               city={el.city}
+                               rankingPlace={el.rankingPlace}
+                               studyProgramms={el.studyProgramms}
+                               description={el.description}/>
   )
 }
 
