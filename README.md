@@ -1,1 +1,1 @@
-![DEMO](https://safety-map.herokuapp.com/)
+[DEMO](https://safety-map.herokuapp.com/)
