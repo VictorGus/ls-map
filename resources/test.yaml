@@ -1601,3 +1601,388 @@
   coords: ['32.603', '-85.486']
   site: www.auburn.edu
   studyProgramms: [Экология]
+- name: Cheng Kung University
+  rankingPlace: 601-700
+  country: Тайвань
+  city: Тайнань
+  coords: ['23', '120.216667']
+  site: web.ncku.edu.tw
+  studyProgramms: [Экология, ' Экологическая инженерия']
+- name: Baylor University
+  rankingPlace: 601-700
+  country: США
+  city: Уэйко
+  coords: ['31.548611', '-97.116667']
+  site: www.baylor.edu
+  studyProgramms: [Экология]
+- name: Ca' Foscari University of Venice
+  rankingPlace: 601-700
+  country: Италия
+  city: Венеция
+  coords: ['45.4345', '12.3265']
+  site: www.unive.it
+  studyProgramms: [Экология]
+- name: Waseda University
+  rankingPlace: 601-700
+  country: Япония
+  city: Синдзюку
+  coords: ['35.709203', '139.719333']
+  site: www.waseda.jp
+  studyProgramms: [Экология, ' Экологическая инженерия']
+- name: Universitat Politecnica de Catalunya
+  rankingPlace: 601-700
+  country: Испания
+  city: Барселона
+  coords: ['41.389444', '2.115833']
+  site: www.upc.edu
+  studyProgramms: [Экология, ' Экологическая инженерия']
+- name: Kansas State University
+  rankingPlace: 601-700
+  country: США
+  city: Манхэттен
+  coords: ['39.191667', '-96.580833']
+  site: k-state.edu
+  studyProgramms: [Экологическая инженерия, ' Экология']
+- name: University of Toledo
+  rankingPlace: 601-700
+  country: США
+  city: Толедо
+  coords: ['41.657716', '-83.61366']
+  site: www.utoledo.edu
+  studyProgramms: [Экологическая инженерия, ' Экология']
+- name: Lehigh University
+  rankingPlace: 601-700
+  country: США
+  city: Бетлехем
+  coords: ['40.607167', '-75.379']
+  site: www.lehigh.edu
+  studyProgramms: [Экологическая инженерия, ' Экология']
+- name: Sichuan University
+  rankingPlace: 601-700
+  country: Китай
+  city: Чэнду
+  coords: ['30.63301', '104.08772']
+  site: http://en.scu.edu.cn
+  studyProgramms: [Экологическая инженерия, ' Экология']
+- name: Stevens Institute of Technology
+  rankingPlace: 601-700
+  country: США
+  city: Хобокен
+  coords: ['40.744906', '-74.023937']
+  site: www.stevens.edu
+  studyProgramms: [Экологическая инженерия, ' Экология']
+- name: Clemson University
+  rankingPlace: 601-700
+  country: США
+  city: Клемсон
+  coords: ['34.678333', '-82.839167']
+  site: www.clemson.edu
+  studyProgramms: [Экологическая инженерия, ' Экология']
+- name: Bogazici University
+  rankingPlace: 601-700
+  country: Турция
+  city: Истанбул
+  coords: ['41.083556', '29.050598']
+  site: boun.edu.tr
+  studyProgramms: [Экология]
+- name: China Agricultural University
+  rankingPlace: 601-700
+  country: Китай
+  city: 'Пекин '
+  coords: ['40.0025', '116.352778']
+  site: www.cau.edu.cn
+  studyProgramms: [Экология]
+- name: Dalian University of Technology
+  rankingPlace: 601-700
+  country: Китай
+  city: Далиан
+  coords: ['38.874444', '121.533611']
+  site: www.dlut.edu.cn
+  studyProgramms: [Экология]
+- name: Université de Sherbrooke
+  rankingPlace: 601-700
+  country: Канада
+  city: Шербрук
+  coords: ['45.379406', '-71.927661']
+  site: usherbrooke.ca
+  studyProgramms: [Экология]
+- name: West Virginia University
+  rankingPlace: 601-700
+  country: США
+  city: Моргантаун
+  coords: ['39.63582', '-79.95453']
+  site: wvu.edu
+  studyProgramms: [Экология]
+- name: Coventry University
+  rankingPlace: 601-700
+  country: Англия
+  city: Ковентри
+  coords: ['52.40805', '-1.506']
+  site: www.coventry.ac.uk
+  studyProgramms: [Экологическая инженерия]
+- name: Universiti Malaysia Perlis (UNIMAP)
+  rankingPlace: 601-700
+  country: Малайзия
+  city: Кангар
+  coords: ['6.447222', '100.244167']
+  site: www.unimap.edu.my
+  studyProgramms: [Экологическая инженерия]
+- name: University of Houston - Clear Lake
+  rankingPlace: 601-700
+  country: США
+  city: Пасадена
+  coords: ['29.577607', '-95.107262']
+  site: uhcl.edu
+  studyProgramms: [Охрана труда]
+- name: University of Northern British Columbia
+  rankingPlace: 801-1000
+  country: Канада
+  city: Принц джордж
+  coords: ['53.887333', '-122.813722']
+  site: https://www.unbc.ca
+  studyProgramms: [Экологическая инженерия, ' Экология']
+- name: Edinburgh Napier University
+  rankingPlace: 801-100
+  country: Великобритания
+  city: эдинбург
+  coords: ['55.921516499999996', '-3.226590526957053']
+  site: www.napier.ac.uk
+  studyProgramms: [Экологическая инженерия, ' Экология']
+- name: Jiangsu University
+  rankingPlace: 801-1000
+  country: Китай
+  city: Женчанг
+  coords: ['32.0565957', '118.77408832807794']
+  site: www.ujs.edu.cn
+  studyProgramms: [Экологическая инженерия, ' Экология']
+- name: National Sun Yat-Sen University
+  rankingPlace: 801-1000
+  country: Тайвань
+  city: Куашанг
+  coords: ['22.626667', '120.265833']
+  site: http://www.nsysu.edu.tw
+  studyProgramms: [Экологическая инженерия, ' Экология']
+- name: Jilin University
+  rankingPlace: 801-1000
+  country: Китай
+  city: Чангчан
+  coords: ['43.88', '125.301']
+  site: www.jlu.edu.cn
+  studyProgramms: [Экологическая инженерия, ' Экология']
+- name: Marquette University
+  rankingPlace: 801-1000
+  country: США
+  city: Милвауки
+  coords: ['43.038', '-87.928']
+  site: www.marquette.edu
+  studyProgramms: [Экологическая инженерия, ' Экология']
+- name: The American University in Cairo
+  rankingPlace: 801-1000
+  country: Египет
+  city: Каир
+  coords: ['30.019944', '31.500344']
+  site: aucegypt.edu
+  studyProgramms: [Экологическая инженерия, ' Экология']
+- name: University of Texas At El Paso
+  rankingPlace: 801-1000
+  country: США
+  city: Ель Пасо
+  coords: ['31.77', '-106.505']
+  site: www.utep.edu
+  studyProgramms: [Экологическая инженерия, ' Экология']
+- name: Universidad Politecnica de Madrid (UPM)
+  rankingPlace: 801-1000
+  country: Испания
+  city: Мадрид
+  coords: ['40.4492', '-3.7281']
+  site: www.upm.es
+  studyProgramms: [Экологическая инженерия, ' Экология']
+- name: Polytechnic University of Valencia
+  rankingPlace: 801-1000
+  country: Испания
+  city: Валенсия
+  coords: ['39.481653', '-0.343808']
+  site: www.upv.es
+  studyProgramms: [Экологическая инженерия, ' Экология']
+- name: University of Bradford
+  rankingPlace: 801-1000
+  country: Великобритания
+  city: Брадфорд
+  coords: ['53.791667', '-1.762222']
+  site: www.bradford.ac.uk
+  studyProgramms: [Экология]
+- name: Sheffield Hallam University
+  rankingPlace: 801-1000
+  country: Великобритания
+  city: Шеффилд
+  coords: ['53.379105', '-1.464706']
+  site: shu.ac.uk
+  studyProgramms: [Экология]
+- name: University of Derby
+  rankingPlace: 801-1000
+  country: Великобритания
+  city: Дерби
+  coords: ['52.938824', '-1.49648']
+  site: www.derby.ac.uk
+  studyProgramms: [Экология, ' Гигиена труда']
+- name: Florida Institute of Technology
+  rankingPlace: 801-1000
+  country: США
+  city: Мельбурн
+  coords: ['28.065772', '-80.624483']
+  site: www.fit.edu
+  studyProgramms: [Экология]
+- name: Leeds Beckett University
+  rankingPlace: 801-1000
+  country: Великобритания
+  city: Лидс
+  coords: ['53.804167', '-1.549444']
+  site: http://www.leedsbeckett.ac.uk/
+  studyProgramms: [Экология, ' Гигиена труда', ' Здоровье и безопасность']
+- name: Teesside University, Middlesbrough
+  rankingPlace: 801-1000
+  country: Великобритания
+  city: Мидлсбро
+  coords: ['54.5722', '-1.23491']
+  site: www.tees.ac.uk
+  studyProgramms: [Экология, ' Гигиена труда']
+- name: University of Salford
+  rankingPlace: 801-1000
+  country: Великобритания
+  city: Солфорд
+  coords: ['53.484444', '-2.271389']
+  site: www.salford.ac.uk
+  studyProgramms: [Экология]
+- name: Staffordshire University
+  rankingPlace: 801-1000
+  country: Великобритания
+  city: Стаффорд
+  coords: ['53.0097', '-2.1817']
+  site: www.staffs.ac.uk
+  studyProgramms: [Экология]
+- name: University of Wolverhampton
+  rankingPlace: 801-1000
+  country: Великобритания
+  city: Вульфхамтон
+  coords: ['52.587222', '-2.127222']
+  site: www.wlv.ac.uk
+  studyProgramms: [Экология, ' Здоровье и безопасность']
+- name: Rochester Institute of Technology
+  rankingPlace: 801-1000
+  country: США
+  city: Хенриетт
+  coords: ['43.084412', '-77.674949']
+  site: www.rit.edu
+  studyProgramms: [Экология]
+- name: Embry-Riddle Aeronautical University - Daytona Beach
+  rankingPlace: 801-1000
+  country: США
+  city: Дайтона бич
+  coords: ['29.18857', '-81.04871']
+  site: www.erau.edu
+  studyProgramms: [Экология, ' Здоровье и безопасность']
+- name: Louisiana Tech University
+  rankingPlace: 801-1000
+  country: США
+  city: Растон
+  coords: ['32.52736', '-92.64701']
+  site: www.latech.edu
+  studyProgramms: [Экология]
+- name: University of Central Lancashire
+  rankingPlace: 801-1000
+  country: Великобритания
+  city: Престон
+  coords: ['53.763021', '-2.7074']
+  site: http://www.uclan.ac.uk/
+  studyProgramms: [Экология, ' Пожарная безопасность', ' Здоровье и безопасность']
+- name: Mississippi State University
+  rankingPlace: 801-1000
+  country: США
+  city: Старвиль
+  coords: ['33.454', '-88.789']
+  site: www.msstate.edu
+  studyProgramms: [Экология]
+- name: Kingston University
+  rankingPlace: 801-1000
+  country: Великобритания
+  city: Лондон
+  coords: ['51.4035', '-0.3039']
+  site: www.kingston.ac.uk
+  studyProgramms: [Экология]
+- name: University of East London
+  rankingPlace: 801-1000
+  country: Великобритания
+  city: Лондон
+  coords: ['51.507778', '0.063611']
+  site: www.uel.ac.uk
+  studyProgramms: [Экология]
+- name: The New School
+  rankingPlace: 801-1000
+  country: США
+  city: Нью-йорк
+  coords: ['40.73547915', '-73.9970708835668']
+  site: www.newschool.edu
+  studyProgramms: [Экология]
+- name: Chiba University
+  rankingPlace: 801-1000
+  country: Япония
+  city: Чиба
+  coords: ['35.631114', '140.096639']
+  site: www.chiba-u.jp/e/index.html
+  studyProgramms: [Экология]
+- name: Universiti Utara Malaysia
+  rankingPlace: 801-1000
+  country: Малайзия
+  city: Синток
+  coords: ['6.457778', '100.505556']
+  site: www.uum.edu.my
+  studyProgramms: [Экология]
+- name: Florida Atlantic University
+  rankingPlace: 801-1000
+  country: США
+  city: Бока
+  coords: ['26.3712', '-80.1017']
+  site: www.fau.edu
+  studyProgramms: [Экология, ' Здоровье и безопасность']
+- name: University of Bedfordshire
+  rankingPlace: 801-1000
+  country: Великобритания
+  city: Бедфорд
+  coords: ['51.877778', '-0.411389']
+  site: http://www.beds.ac.uk
+  studyProgramms: [Экология]
+- name: American University of Sharjah
+  rankingPlace: 801-1000
+  country: ОАЭ
+  city: Шарджа
+  coords: ['25.309722', '55.490556']
+  site: www.aus.edu
+  studyProgramms: [Экология]
+- name: University of Roehampton
+  rankingPlace: 801-1000
+  country: Великобритания
+  city: Лондон
+  coords: ['51.4566', '-0.2431']
+  site: www.roehampton.ac.uk
+  studyProgramms: [Экология]
+- name: Karlstad University
+  rankingPlace: 801-1000
+  country: Швеция
+  city: Карлстад
+  coords: ['59.405833', '13.581667']
+  site: www.kau.se
+  studyProgramms: [Экология]
+- name: National Central University
+  rankingPlace: 801-1000
+  country: Тайвань
+  city: Тоянь
+  coords: ['24.968333', '121.192778']
+  site: www.ncu.edu.tw
+  studyProgramms: [Экология]
+- name: UNESP
+  rankingPlace: 801-1000
+  country: 'Бразилия '
+  city: Аракатуба
+  coords: ['-22.8172', '-47.0694']
+  site: unesp.br
+  studyProgramms: [Экология]
